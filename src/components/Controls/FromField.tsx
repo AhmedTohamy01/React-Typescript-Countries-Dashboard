@@ -5,7 +5,7 @@ interface PropsType {
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-export default function FromField({ ...restProps }) {
+export default function FromField({ ...restProps }: PropsType) {
   return (
     <TextField
       id='from'
