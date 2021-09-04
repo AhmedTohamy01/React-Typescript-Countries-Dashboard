@@ -125,7 +125,7 @@ The user can clear all filters and return it to the default state by click on on
 
 <div align="center"><a name="menu"></a>
 
-![ScreenShot](/public/img/readme/clear.png)
+![ScreenShot](https://github.com/AhmedTohamy01/Countries-Dashboard/blob/main/public/img/readme/clear.png)
 </div>
 
 # Live Demo
