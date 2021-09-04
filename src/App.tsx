@@ -1,3 +1,5 @@
+import DashboardCompound from './compounds/DashboardCompound'
+
 export default function App() {
-  return <>This is my new app</>
+  return <DashboardCompound />
 }
