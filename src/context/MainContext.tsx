@@ -11,20 +11,20 @@ interface ContextInterface {
   setCheckBoxFilterTerm?: (arg0: string) => void
   regionFilterTerm?: string
   setRegionFilterTerm?: (arg0: string) => void
-  populationFrom?: string
-  setPopulationFrom?: (arg0: string) => void
-  populationTo?: string
-  setPopulationTo?: (arg0: string) => void
+  populationFrom?: any
+  setPopulationFrom?: (arg0: any) => void
+  populationTo?: any
+  setPopulationTo?: (arg0: any) => void
 }
 
-export const MainContext = createContext<any>({})
+export const MainContext = createContext<ContextInterface>({})
 
 export const MainContextProvider = ({ children }: PropsType) => {
   const [searchTerm, setSearchTerm] = useState('')
   const [checkBoxFilterTerm, setCheckBoxFilterTerm] = useState('name')
   const [regionFilterTerm, setRegionFilterTerm] = useState('all')
-  const [populationFrom, setPopulationFrom] = useState('')
-  const [populationTo, setPopulationTo] = useState('')
+  const [populationFrom, setPopulationFrom] = useState(null)
+  const [populationTo, setPopulationTo] = useState(null)
 
   return (
     <MainContext.Provider
