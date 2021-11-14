@@ -6,7 +6,7 @@ function GetData() {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    fetch('https://restcountries.eu/rest/v2/all')
+    fetch('https://restcountries.com/v2/all')
       .then((fetchedData) => fetchedData.json())
       .then((jsonData) => setData(jsonData))
       .catch((error) => console.log(error))
