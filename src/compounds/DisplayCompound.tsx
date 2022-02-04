@@ -64,13 +64,13 @@ export default function DisplayCompound() {
                 ? data
                     .filter(
                       (item: ItemType) =>
-                        item
-                          .languages!.map((lang) => lang.name)
+                        item?.languages
+                          .map((lang) => lang.name)
                           .toString()
                           .toLowerCase()
                           .includes(searchTerm!.toLowerCase()) &&
-                        item.region!.toLowerCase() ===
-                          regionFilterTerm!.toLowerCase() &&
+                        item.region?.toLowerCase() ===
+                          regionFilterTerm?.toLowerCase() &&
                         item.population! <= populationTo &&
                         item.population! >= populationFrom
                     )
@@ -81,10 +81,10 @@ export default function DisplayCompound() {
                         <TableCell>{item.region}</TableCell>
                         <TableCell>{item.population}</TableCell>
                         <TableCell>
-                          {item.languages!.map((lang) => `${lang.name}, `)}
+                          {item?.languages?.map((lang) => `${lang.name}, `)}
                         </TableCell>
                         <TableCell>
-                          {item.timezones!.toString().split(',').join(' ')}
+                          {item?.timezones?.toString().split(',').join(' ')}
                         </TableCell>
                       </TableRow>
                     ))
@@ -98,7 +98,7 @@ export default function DisplayCompound() {
                     .filter(
                       (item: ItemType) =>
                         item[checkBoxFilterTerm]
-                          .toLowerCase()
+                          ?.toLowerCase()
                           .includes(searchTerm!.toLowerCase()) &&
                         item.region!.toLowerCase() ===
                           regionFilterTerm!.toLowerCase() &&
@@ -112,10 +112,10 @@ export default function DisplayCompound() {
                         <TableCell>{item.region}</TableCell>
                         <TableCell>{item.population}</TableCell>
                         <TableCell>
-                          {item.languages!.map((lang) => `${lang.name}, `)}
+                          {item?.languages?.map((lang) => `${lang.name}, `)}
                         </TableCell>
                         <TableCell>
-                          {item.timezones!.toString().split(',').join(' ')}
+                          {item?.timezones?.toString().split(',').join(' ')}
                         </TableCell>
                       </TableRow>
                     ))
@@ -125,8 +125,8 @@ export default function DisplayCompound() {
                 ? data
                     .filter(
                       (item: ItemType) =>
-                        item
-                          .languages!.map((lang) => lang.name)
+                        item.languages
+                          ?.map((lang) => lang.name)
                           .toString()
                           .toLowerCase()
                           .includes(searchTerm!.toLowerCase()) &&
@@ -140,10 +140,10 @@ export default function DisplayCompound() {
                         <TableCell>{item.region}</TableCell>
                         <TableCell>{item.population}</TableCell>
                         <TableCell>
-                          {item.languages!.map((lang) => `${lang.name}, `)}
+                          {item?.languages?.map((lang) => `${lang.name}, `)}
                         </TableCell>
                         <TableCell>
-                          {item.timezones!.toString().split(',').join(' ')}
+                          {item?.timezones?.toString().split(',').join(' ')}
                         </TableCell>
                       </TableRow>
                     ))
@@ -155,7 +155,7 @@ export default function DisplayCompound() {
                     .filter(
                       (item: ItemType) =>
                         item[checkBoxFilterTerm]
-                          .toLowerCase()
+                          ?.toLowerCase()
                           .includes(searchTerm!.toLowerCase()) &&
                         item.region!.toLowerCase() ===
                           regionFilterTerm!.toLowerCase()
@@ -167,10 +167,10 @@ export default function DisplayCompound() {
                         <TableCell>{item.region}</TableCell>
                         <TableCell>{item.population}</TableCell>
                         <TableCell>
-                          {item.languages!.map((lang) => `${lang.name}, `)}
+                          {item?.languages?.map((lang) => `${lang.name}, `)}
                         </TableCell>
                         <TableCell>
-                          {item.timezones!.toString().split(',').join(' ')}
+                          {item?.timezones?.toString().split(',').join(' ')}
                         </TableCell>
                       </TableRow>
                     ))
@@ -181,8 +181,8 @@ export default function DisplayCompound() {
                 ? data
                     .filter(
                       (item: ItemType) =>
-                        item
-                          .languages!.map((lang) => lang.name)
+                        item?.languages
+                          ?.map((lang) => lang.name)
                           .toString()
                           .toLowerCase()
                           .includes(searchTerm!.toLowerCase()) &&
@@ -196,10 +196,10 @@ export default function DisplayCompound() {
                         <TableCell>{item.region}</TableCell>
                         <TableCell>{item.population}</TableCell>
                         <TableCell>
-                          {item.languages!.map((lang) => `${lang.name}, `)}
+                          {item?.languages?.map((lang) => `${lang.name}, `)}
                         </TableCell>
                         <TableCell>
-                          {item.timezones!.toString().split(',').join(' ')}
+                          {item?.timezones?.toString().split(',').join(' ')}
                         </TableCell>
                       </TableRow>
                     ))
@@ -212,7 +212,7 @@ export default function DisplayCompound() {
                     .filter(
                       (item: ItemType) =>
                         item[checkBoxFilterTerm]
-                          .toLowerCase()
+                          ?.toLowerCase()
                           .includes(searchTerm!.toLowerCase()) &&
                         item.population! <= populationTo &&
                         item.population! >= populationFrom
@@ -224,10 +224,10 @@ export default function DisplayCompound() {
                         <TableCell>{item.region}</TableCell>
                         <TableCell>{item.population}</TableCell>
                         <TableCell>
-                          {item.languages!.map((lang) => `${lang.name}, `)}
+                          {item?.languages?.map((lang) => `${lang.name}, `)}
                         </TableCell>
                         <TableCell>
-                          {item.timezones!.toString().split(',').join(' ')}
+                          {item?.timezones?.toString().split(',').join(' ')}
                         </TableCell>
                       </TableRow>
                     ))
@@ -235,7 +235,7 @@ export default function DisplayCompound() {
                 ? data
                     .filter(
                       (item: ItemType) =>
-                        item.region!.toLowerCase() ===
+                        item?.region?.toLowerCase() ===
                           regionFilterTerm!.toLowerCase() &&
                         item.population! <= populationTo &&
                         item.population! >= populationFrom
@@ -247,10 +247,10 @@ export default function DisplayCompound() {
                         <TableCell>{item.region}</TableCell>
                         <TableCell>{item.population}</TableCell>
                         <TableCell>
-                          {item.languages!.map((lang) => `${lang.name}, `)}
+                          {item?.languages?.map((lang) => `${lang.name}, `)}
                         </TableCell>
                         <TableCell>
-                          {item.timezones!.toString().split(',').join(' ')}
+                          {item?.timezones?.toString().split(',').join(' ')}
                         </TableCell>
                       </TableRow>
                     ))
@@ -258,7 +258,7 @@ export default function DisplayCompound() {
                 ? data
                     .filter((item: ItemType) =>
                       item
-                        .languages!.map((lang) => lang.name)
+                        ?.languages!.map((lang) => lang.name)
                         .toString()
                         .toLowerCase()
                         .includes(searchTerm!.toLowerCase())
@@ -270,10 +270,10 @@ export default function DisplayCompound() {
                         <TableCell>{item.region}</TableCell>
                         <TableCell>{item.population}</TableCell>
                         <TableCell>
-                          {item.languages!.map((lang) => `${lang.name}, `)}
+                          {item?.languages?.map((lang) => `${lang.name}, `)}
                         </TableCell>
                         <TableCell>
-                          {item.timezones!.toString().split(',').join(' ')}
+                          {item?.timezones?.toString().split(',').join(' ')}
                         </TableCell>
                       </TableRow>
                     ))
@@ -283,7 +283,7 @@ export default function DisplayCompound() {
                 ? data
                     .filter((item: ItemType) =>
                       item[checkBoxFilterTerm]
-                        .toLowerCase()
+                        ?.toLowerCase()
                         .includes(searchTerm!.toLowerCase())
                     )
                     .map((item: ItemType, index: number) => (
@@ -293,10 +293,10 @@ export default function DisplayCompound() {
                         <TableCell>{item.region}</TableCell>
                         <TableCell>{item.population}</TableCell>
                         <TableCell>
-                          {item.languages!.map((lang) => `${lang.name}, `)}
+                          {item?.languages?.map((lang) => `${lang.name}, `)}
                         </TableCell>
                         <TableCell>
-                          {item.timezones!.toString().split(',').join(' ')}
+                          {item?.timezones?.toString().split(',').join(' ')}
                         </TableCell>
                       </TableRow>
                     ))
@@ -304,7 +304,7 @@ export default function DisplayCompound() {
                 ? data
                     .filter(
                       (item: ItemType) =>
-                        item.region!.toLowerCase() ===
+                        item?.region?.toLowerCase() ===
                         regionFilterTerm!.toLowerCase()
                     )
                     .map((item: ItemType, index: number) => (
@@ -314,10 +314,10 @@ export default function DisplayCompound() {
                         <TableCell>{item.region}</TableCell>
                         <TableCell>{item.population}</TableCell>
                         <TableCell>
-                          {item.languages!.map((lang) => `${lang.name}, `)}
+                          {item?.languages?.map((lang) => `${lang.name}, `)}
                         </TableCell>
                         <TableCell>
-                          {item.timezones!.toString().split(',').join(' ')}
+                          {item?.timezones?.toString().split(',').join(' ')}
                         </TableCell>
                       </TableRow>
                     ))
@@ -335,10 +335,10 @@ export default function DisplayCompound() {
                         <TableCell>{item.region}</TableCell>
                         <TableCell>{item.population}</TableCell>
                         <TableCell>
-                          {item.languages!.map((lang) => `${lang.name}, `)}
+                          {item?.languages?.map((lang) => `${lang.name}, `)}
                         </TableCell>
                         <TableCell>
-                          {item.timezones!.toString().split(',').join(' ')}
+                          {item?.timezones?.toString().split(',').join(' ')}
                         </TableCell>
                       </TableRow>
                     ))
@@ -350,10 +350,10 @@ export default function DisplayCompound() {
                       <TableCell>{item.region}</TableCell>
                       <TableCell>{item.population}</TableCell>
                       <TableCell>
-                        {item.languages!.map((lang) => `${lang.name}, `)}
+                        {item?.languages?.map((lang) => `${lang.name}, `)}
                       </TableCell>
                       <TableCell>
-                        {item.timezones!.toString().split(',').join(' ')}
+                        {item?.timezones?.toString().split(',').join(' ')}
                       </TableCell>
                     </TableRow>
                   ))
