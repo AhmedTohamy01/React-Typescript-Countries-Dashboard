@@ -40,7 +40,6 @@ Where we can filter the countries based on their population number.
  - [Live Demo](#live-demo)
 - [Technology Used](#technology-used)
 - [How To Use](#how-to-use)
-- [Author](#author)
 
 
 # Project Walk-Through
@@ -170,10 +169,3 @@ npm run dev
 4) Now you can see the project in your browser. 
 Happy Hacking!
 
-
-# Author
-
-👤 **Ahmed Tohamy**
-- Github: https://github.com/AhmedTohamy01
-- Linkedin: https://www.linkedin.com/in/ATohamy
-- Email: Ahmed-Tohamy@outlook.com
